@@ -1,4 +1,4 @@
-export type IPosition = { x: number, y: number, z: number }
+export type IPosition = { x: number, y: number }
 export type IId = string
 export type IIds = IId[]
 export type IStar = {

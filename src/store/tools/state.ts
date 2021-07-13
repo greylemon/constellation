@@ -9,8 +9,7 @@ export const generateRandomNumber = (base: number) => {
 
 export const generateRandomPosition = (base: number): IPosition => ({
   x: generateRandomNumber(base),
-  y: generateRandomNumber(base),
-  z: generateRandomNumber(base)
+  y: generateRandomNumber(base)
 })
 
 const createStarsData = (
@@ -42,8 +41,8 @@ const createStarsData = (
 export const createState = (): IState => {
   const starsData = createStarsData(10, 5, 100)
   const state: IState = {
-    direction: { x: 0, y: 0, z: 0 },
-    postiion: { x: 0, y: 0, z: 0 },
+    direction: { x: 0, y: 0 },
+    postiion: { x: 0, y: 0 },
     starsData,
     radius: 100
   }

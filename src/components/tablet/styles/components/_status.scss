@@ -1,0 +1,16 @@
+.status {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &__collection {
+    &_time {
+      padding: 0 10px;
+      color: white;
+    }
+
+    // &_notification {}
+  }
+}

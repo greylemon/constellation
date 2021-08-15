@@ -1,0 +1,4 @@
+When is react-virtualized-autosizer required?
+
+Mainly for app pane when handling various screen sizes. 
+The grid size needs to be computed along with pagination.

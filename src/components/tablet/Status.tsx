@@ -6,7 +6,6 @@ import { getTime } from './tools/time'
 const Time = () => {
   const [time, setTime] = useState(getTime())
   useInterval(() => setTime(getTime()), 60 * 1000)
-
   return (
     <div className={styles.status__collection_time}>
       {time}

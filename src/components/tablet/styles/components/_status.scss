@@ -1,9 +1,10 @@
+@import '../abstracts/variables';
+@import '../mixins//breakpoints';
 .status {
   display: flex;
   justify-content: space-between;
-  height: 20px;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: $interface-color;
 
   &__collection {
     &_time {
@@ -12,5 +13,17 @@
     }
 
     // &_notification {}
+  }
+
+  @include mq(small) {
+    padding: map-get($map: $status-bar-height, $key: small) 0;
+  }
+
+  @include mq(medium) {
+    padding: map-get($map: $status-bar-height, $key: medium) 0;
+  }
+
+  @include mq(large) {
+    padding: map-get($map: $status-bar-height, $key: large) 0;
   }
 }

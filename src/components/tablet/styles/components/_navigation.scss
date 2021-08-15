@@ -1,0 +1,49 @@
+@import '../abstracts/variables';
+@import '../base/shapes';
+@import '../base//shadow';
+
+@mixin navigation-buttons($parent-selector, $length: 40px) {
+  #{$parent-selector}__return {
+    @include triangle($direction: left, $height: $length, $width: $length / 2);
+  }
+
+  #{$parent-selector}__home {
+    @include circle($radius: $length / 2);
+  }
+
+  #{$parent-selector}__background {
+    @include square($length: $length);
+  }
+}
+
+.navigation {
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  // padding: 0 500px;
+  // box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-around;
+
+  background-color: $interface-color;
+
+  @include navigation-buttons(&);
+
+  @include mq(small) {
+    padding: map-get($map: $navigation-bar-height, $key: small) 0;
+    @include navigation-buttons(&, 30px);
+  }
+
+  @include mq(medium) {
+    padding: map-get($map: $navigation-bar-height, $key: medium) 0;
+    @include navigation-buttons(&, 35px);
+  }
+
+  @include mq(large) {
+    padding: map-get($map: $navigation-bar-height, $key: large) 0;
+    @include navigation-buttons(&, 40px);
+  }
+}

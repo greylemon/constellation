@@ -1,0 +1,31 @@
+@import '../abstracts/variables';
+@import '../layout/breakpoints';
+.status {
+  height: map-get($map: $status-bar-height, $key: large);
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: $interface-color;
+  align-items: center;
+
+  &_collection {
+    &__time {
+      padding: 0 10px;
+      color: white;
+    }
+
+    // &_notification {}
+  }
+
+  @include mq(small) {
+    height: map-get($map: $status-bar-height, $key: small);
+  }
+
+  @include mq(medium) {
+    height: map-get($map: $status-bar-height, $key: medium);
+  }
+
+  @include mq(large) {
+    height: map-get($map: $status-bar-height, $key: large);
+  }
+}

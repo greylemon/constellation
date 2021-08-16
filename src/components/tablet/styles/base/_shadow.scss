@@ -1,9 +1,0 @@
-@mixin shadow($color: black) {
-  -webkit-box-shadow: 0px 0px 17px 5px $color; 
-  box-shadow: 0px 0px 17px 5px $color;
-}
-
-@mixin shadow-drop($color: rgba(265,265, 265,.5)) {
-  -webkit-filter: drop-shadow(0px 0px 2px $color);
-  filter: drop-shadow(0px 0px 2px $color);
-}

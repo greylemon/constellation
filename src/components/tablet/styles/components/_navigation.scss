@@ -36,13 +36,9 @@
 }
 
 .navigation {
-  height: 100px;
+  height: map-get($map: $navigation-bar-height, $key: large);
   width: 100vw;
   align-items: center;
-  bottom: 0;
-  position: absolute;
-  // padding: 0 500px;
-  // box-sizing: border-box;
 
   display: flex;
   justify-content: space-around;
@@ -52,17 +48,17 @@
   @include navigation-icons(&);
 
   @include mq(small) {
-    padding: map-get($map: $navigation-bar-height, $key: small) 0;
+    height: map-get($map: $navigation-bar-height, $key: small);
     @include navigation-icons(&, 30px);
   }
 
   @include mq(medium) {
-    padding: map-get($map: $navigation-bar-height, $key: medium) 0;
+    height: map-get($map: $navigation-bar-height, $key: medium);
     @include navigation-icons(&, 35px);
   }
 
   @include mq(large) {
-    padding: map-get($map: $navigation-bar-height, $key: large) 0;
+    height: map-get($map: $navigation-bar-height, $key: large);
     @include navigation-icons(&, 40px);
   }
 }

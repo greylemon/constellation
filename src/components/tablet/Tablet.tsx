@@ -3,6 +3,7 @@ import { AppPane } from './AppPane'
 import { Navigation } from './Navigation'
 import { Status } from './Status'
 import { Route, Switch } from 'react-router-dom'
+import styles from './styles/main.module.scss'
 
 export type TApp = any
 export type TTablet = {
@@ -27,7 +28,7 @@ export const Tablet: FunctionComponent<TTablet> = (
   }
 ) => {
   return (
-    <div>
+    <div className={styles.tablet}>
       <Status />
       <ContentRouter />
       <Navigation />

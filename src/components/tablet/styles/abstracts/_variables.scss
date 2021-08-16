@@ -10,13 +10,13 @@ $interface-color: rgba(0, 0, 0, 0.4);
 
 // Page dimensions
 $status-bar-height: (
-  small: 4px,
-  medium: 5px,
-  large: 6px,
+  small: 20px,
+  medium: 25px,
+  large: 30px,
 ) !default;
 
 $navigation-bar-height: (
-  small: 5px,
-  medium: 8px,
-  large: 10px,
+  small: 80px,
+  medium: 100px,
+  large: 200px,
 ) !default;

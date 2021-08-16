@@ -1,10 +1,12 @@
 @import '../abstracts/variables';
 @import '../layout/breakpoints';
 .status {
+  height: map-get($map: $status-bar-height, $key: large);
   display: flex;
   justify-content: space-between;
   width: 100vw;
   background-color: $interface-color;
+  align-items: center;
 
   &_collection {
     &__time {
@@ -16,14 +18,14 @@
   }
 
   @include mq(small) {
-    padding: map-get($map: $status-bar-height, $key: small) 0;
+    height: map-get($map: $status-bar-height, $key: small);
   }
 
   @include mq(medium) {
-    padding: map-get($map: $status-bar-height, $key: medium) 0;
+    height: map-get($map: $status-bar-height, $key: medium);
   }
 
   @include mq(large) {
-    padding: map-get($map: $status-bar-height, $key: large) 0;
+    height: map-get($map: $status-bar-height, $key: large);
   }
 }

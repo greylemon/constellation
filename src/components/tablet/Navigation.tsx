@@ -3,9 +3,7 @@ import { RippleButton } from './components/Buttons';
 import styles from './styles/main.module.scss';
 
 const Home = () => {
-  const handleClick = useCallback(() => {
-    console.log("clicked")
-  }, [])
+  const handleClick = useCallback(() => {}, [])
   return (
     <RippleButton onClick={handleClick}>
       <div className={styles.navigation_icon__home} />
@@ -14,9 +12,7 @@ const Home = () => {
 } 
 
 const Background = () => {
-  const handleClick = useCallback(() => {
-
-  }, [])
+  const handleClick = useCallback(() => {}, [])
   return (
     <RippleButton onClick={handleClick}>
       <div className={styles.navigation_icon__background} />
@@ -25,9 +21,7 @@ const Background = () => {
 } 
 
 const Return = () => {
-  const handleClick = useCallback(() => {
-
-  }, [])
+  const handleClick = useCallback(() => {}, [])
   return (
     <RippleButton onClick={handleClick}>
       <div className={styles.navigation_icon__return}/>

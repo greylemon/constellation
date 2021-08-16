@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/constellation/static/css/main.f9e94a27.chunk.css",
+    "main.js": "/constellation/static/js/main.a514f250.chunk.js",
+    "main.js.map": "/constellation/static/js/main.a514f250.chunk.js.map",
+    "runtime-main.js": "/constellation/static/js/runtime-main.584d8211.js",
+    "runtime-main.js.map": "/constellation/static/js/runtime-main.584d8211.js.map",
+    "static/js/2.104d3b5e.chunk.js": "/constellation/static/js/2.104d3b5e.chunk.js",
+    "static/js/2.104d3b5e.chunk.js.map": "/constellation/static/js/2.104d3b5e.chunk.js.map",
+    "static/js/3.ec5483bf.chunk.js": "/constellation/static/js/3.ec5483bf.chunk.js",
+    "static/js/3.ec5483bf.chunk.js.map": "/constellation/static/js/3.ec5483bf.chunk.js.map",
+    "index.html": "/constellation/index.html",
+    "static/css/main.f9e94a27.chunk.css.map": "/constellation/static/css/main.f9e94a27.chunk.css.map",
+    "static/js/2.104d3b5e.chunk.js.LICENSE.txt": "/constellation/static/js/2.104d3b5e.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/constellation/static/media/purple-galaxy.bcc3ea7c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.584d8211.js",
+    "static/js/2.104d3b5e.chunk.js",
+    "static/css/main.f9e94a27.chunk.css",
+    "static/js/main.a514f250.chunk.js"
+  ]
+}

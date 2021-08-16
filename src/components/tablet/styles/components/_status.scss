@@ -1,13 +1,13 @@
 @import '../abstracts/variables';
-@import '../mixins//breakpoints';
+@import '../layout/breakpoints';
 .status {
   display: flex;
   justify-content: space-between;
   width: 100vw;
   background-color: $interface-color;
 
-  &__collection {
-    &_time {
+  &_collection {
+    &__time {
       padding: 0 10px;
       color: white;
     }

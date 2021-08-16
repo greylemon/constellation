@@ -1,0 +1,15 @@
+@import '../base/effects';
+@import '../base/shapes';
+@import '../abstracts/variables';
+
+@mixin ripple__button($height, $width) {
+  @include ripple();
+  @include oval($height: $height, $width: $width, $border-radius: 10%, $color: transparent);
+
+  border: none;
+
+  &:focus {
+    outline: none;
+    border: 1px solid gray;
+  }
+}

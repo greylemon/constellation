@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { useInterval } from './hooks/async'
+import { useInterval } from '../../../hooks/async'
 import styles from './styles/main.module.scss'
-import { getTime } from './tools/time'
+import { getTime } from '../../../tools/time'
 
 const Time = () => {
   const [time, setTime] = useState(getTime())

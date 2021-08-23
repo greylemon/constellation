@@ -1,5 +1,6 @@
-@import '../abstracts/variables';
-@import '../layout/breakpoints';
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/layout/breakpoints';
+
 .status {
   height: map-get($map: $status-bar-height, $key: large);
   display: flex;

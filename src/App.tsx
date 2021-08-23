@@ -1,6 +1,5 @@
-import React from 'react';
 import './App.css';
-import { Tablet } from './components/tablet/Tablet';
+import { Tablet } from './components/tablet/components/core/tablet/Tablet2';
 
 const App = () => (
   <div className="App">

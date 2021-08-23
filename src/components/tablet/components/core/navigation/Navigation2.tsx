@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import { RippleButton } from './components/Buttons';
-import styles from './styles/main.module.scss';
+import { RippleButton } from '../../input/Buttons';
+import styles from '../../../styles/main.module.scss';
 
 const Home = () => {
   const handleClick = useCallback(() => {}, [])

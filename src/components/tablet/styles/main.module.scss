@@ -3,14 +3,10 @@
 @import 'components/navigation';
 @import 'components/button';
 @import 'components/appPane';
+@import 'components/page';
 
-@each $breakpoint, $value in $navigation-bar-height {
+// Should be moved elsewhere and imported in independent module scss
+@each $breakpoint, $value in $breakpoints {
   $key: "breakpoint_#{$breakpoint}";
   @value #{$key} #{$value};
 };
-
-.tablet {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-}

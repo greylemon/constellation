@@ -1,9 +1,10 @@
-@import '../abstracts/variables';
-@import '../base/shapes';
-@import '../base/shadow';
-@import '../base/effects';
-@import '../layout/position';
-@import '../components/button';
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/base/shapes';
+@import '../../../styles/base/shadow';
+@import '../../../styles/base/effects';
+@import '../../../styles/layout/position';
+@import '../../../styles/layout/breakpoints';
+@import '../../../styles/components/button';
 
 @mixin icon() {
   & {

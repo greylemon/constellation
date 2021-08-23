@@ -1,5 +1,5 @@
-// import {  } from '@reduxjs/toolkit'
+import { TTabletState } from "../redux";
 
-export const createState = () => {
-
-}
+export const createState = (): TTabletState => ({
+  timezone: "America/Los_Angeles"
+})

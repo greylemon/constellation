@@ -38,7 +38,7 @@
 
 .navigation {
   height: map-get($map: $navigation-bar-height, $key: large);
-  width: 100vw;
+  width: 100%;
   align-items: center;
 
   display: flex;

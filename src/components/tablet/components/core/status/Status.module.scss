@@ -5,7 +5,7 @@
   height: map-get($map: $status-bar-height, $key: large);
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   background-color: $interface-color;
   align-items: center;
 

@@ -10,12 +10,7 @@ export type TTablet = {
   apps?: TApp[]
 }
 
-export const Tablet: FunctionComponent<TTablet> = (
-  {
-    apps,
-    isRouted
-  }
-) => {
+export const Tablet: FunctionComponent<TTablet> = ({ apps, isRouted }) => {
   return (
     <div className={styles.tablet}>
       <Status />

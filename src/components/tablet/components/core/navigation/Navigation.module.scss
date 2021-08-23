@@ -18,16 +18,20 @@
     @include ripple__button($height: $length * 2, $width: $length * 3);
     &__return {
       @include icon() {
-        @include triangle($direction: left, $height: $length, $width: $length / 2);
+        @include triangle(
+          $direction: left,
+          $height: $length,
+          $width: $length / 2
+        );
       }
     }
-  
+
     &__home {
       @include icon() {
         @include circle($radius: $length / 2);
       }
     }
-  
+
     &__background {
       @include icon() {
         @include square($length: $length);

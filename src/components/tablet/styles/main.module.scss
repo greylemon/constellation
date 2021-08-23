@@ -7,6 +7,6 @@
 
 // Should be moved elsewhere and imported in independent module scss
 @each $breakpoint, $value in $breakpoints {
-  $key: "breakpoint_#{$breakpoint}";
+  $key: 'breakpoint_#{$breakpoint}';
   @value #{$key} #{$value};
-};
+} ;

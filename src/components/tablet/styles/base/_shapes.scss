@@ -1,4 +1,3 @@
-
 @mixin triangle($direction, $color: white, $height: 40px, $width: 20px) {
   @include shadow-drop();
   width: 0;
@@ -8,24 +7,27 @@
     border-bottom: top,
     border-top: bottom,
     border-right: left,
-    border-left: right
+    border-left: right,
   );
 
   $direction-map: (
     bottom: border-bottom,
     left: border-left,
     top: border-top,
-    right: border-right
+    right: border-right,
   );
 
-  $compliment: map-get($map: $direction-map, $key: $direction);
+  $compliment: map-get(
+    $map: $direction-map,
+    $key: $direction,
+  );
 
   @each $border-side, $value in $border-compliment-map {
     @if $direction == $value {
       #{$border-side}: $height solid $color;
     } @else if $border-side != $compliment {
       #{$border-side}: $width solid transparent;
-    } 
+    }
   }
 }
 
@@ -33,7 +35,7 @@
   @include shadow-drop();
   width: $width;
   height: $height;
-  background-color: $color; 
+  background-color: $color;
   border-radius: $border-radius;
 }
 
@@ -46,7 +48,7 @@
   @include shadow-drop();
   width: $width;
   height: $height;
-  background-color: $color; 
+  background-color: $color;
 }
 
 @mixin square($color: white, $length: 40px) {

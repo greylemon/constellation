@@ -1,6 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { TypedUseSelectorHook, useSelector } from "react-redux";
-import { constellationReducer } from "./rootReducer";
+import { configureStore } from '@reduxjs/toolkit'
+import { TypedUseSelectorHook, useSelector } from 'react-redux'
+import { constellationReducer } from './rootReducer'
 
 /**
  * Tablet mainly consists of user settings or systems data

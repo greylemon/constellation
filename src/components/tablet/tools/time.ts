@@ -1,5 +1,5 @@
 export const getTime = () => {
-  const _padTime = (time: number) => ("0" + time).slice(-2)
+  const _padTime = (time: number) => ('0' + time).slice(-2)
 
   const date = new Date()
   const hours = _padTime(date.getHours())

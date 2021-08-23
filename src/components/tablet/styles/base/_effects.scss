@@ -3,16 +3,17 @@
   & {
     background-position: center;
     transition: background 0.8s;
-  
+
     &:hover {
-      background: #999999 radial-gradient(circle, transparent 1%, #afafaf 1%) center/15000%;
+      background: #999999 radial-gradient(circle, transparent 1%, #afafaf 1%)
+        center/15000%;
     }
-  
-    &:active, &:target {
+
+    &:active,
+    &:target {
       background-color: rgb(148, 148, 148);
       background-size: 100%;
       transition: background 0s;
     }
-
   }
 }

@@ -1,6 +1,6 @@
-import { useCallback } from 'react';
-import { RippleButton } from '../../input/Buttons';
-import styles from '../../../styles/main.module.scss';
+import { useCallback } from 'react'
+import { RippleButton } from '../../input/Buttons'
+import styles from '../../../styles/main.module.scss'
 
 const Home = () => {
   const handleClick = useCallback(() => {}, [])
@@ -9,7 +9,7 @@ const Home = () => {
       <div className={styles.navigation_icon__home} />
     </RippleButton>
   )
-} 
+}
 
 const Background = () => {
   const handleClick = useCallback(() => {}, [])
@@ -18,13 +18,13 @@ const Background = () => {
       <div className={styles.navigation_icon__background} />
     </RippleButton>
   )
-} 
+}
 
 const Return = () => {
   const handleClick = useCallback(() => {}, [])
   return (
     <RippleButton onClick={handleClick}>
-      <div className={styles.navigation_icon__return}/>
+      <div className={styles.navigation_icon__return} />
     </RippleButton>
   )
 }

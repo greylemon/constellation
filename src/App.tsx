@@ -1,5 +1,5 @@
 import './App.css'
-import { Tablet } from './components/tablet/components/core/tablet/Tablet2'
+import { Tablet } from './components/tablet/components/core/tablet/Tablet'
 
 const App = () => (
   <div className="App">

@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react'
-import styles from '../styles/main.module.scss'
+import styles from './Navigation.module.scss'
 
 type TRippleButtonProps = {
   onClick: () => void

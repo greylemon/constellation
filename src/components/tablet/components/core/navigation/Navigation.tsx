@@ -1,4 +1,8 @@
+import { useCallback } from 'react'
 import { FunctionComponent } from 'react'
+import { useHistory } from 'react-router-dom'
+import { ROUTE_OPENED_APPS, ROUTE_ROOT } from '../../../config/routes'
+import { RippleButton } from './RippleButtons'
 import styles from './Navigation.module.scss'
 
 /**
@@ -16,17 +20,49 @@ import styles from './Navigation.module.scss'
 type TRouterButtonTypes = {
   callback?: () => void
   route?: string
+  className: string
 }
 
-// const RouterButton: FunctionComponent<TRouterButtonTypes> = (
-//   { route, callback }
-// ) => {
+const RouterButton: FunctionComponent<TRouterButtonTypes> = (
+  { route, callback, className }
+) => {
+  const history = useHistory()
+  const handleClick = useCallback(() => {
+    if (callback) return callback
 
-// }
+    if (route) return () => history.push(route)
+  }, [route, callback, history])
+  return (
+    <RippleButton onClick={handleClick}>
+      <div className={className} />
+    </RippleButton>
+  )
+}
 
-const OpenedAppListNavigation = () => <div />
-const HomeNavigationButton = () => <div />
-const ReturnNavigationButton = () => <div />
+const OpenedAppListNavigation = () => (
+  <RouterButton 
+    className={styles.navigation_icon__background} 
+    route={ROUTE_OPENED_APPS}
+  />
+)
+
+const HomeNavigationButton = () => (
+  <RouterButton 
+    className={styles.navigation_icon__home} 
+    route={ROUTE_ROOT}
+  />
+)
+
+const ReturnNavigationButton = () => {
+  const history = useHistory()
+  const handleClick = useCallback(() => history.goBack(), [history])
+  return (
+    <RouterButton 
+      className={styles.navigation_icon__return} 
+      callback={handleClick}
+    />
+  )
+}
 
 export const Navigation = () => (
   <div className={styles.navigation}>

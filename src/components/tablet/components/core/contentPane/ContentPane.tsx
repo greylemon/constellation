@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react'
 import styles from './ContentPane.module.scss'
 
 /**
@@ -30,7 +31,7 @@ type TPosition = { x: number; y: number }
 type TDimension = TPosition
 
 // App types
-type TApp = { name: string; route: string }
+type TApp = { name: string; route: string, icon: JSX.Element }
 type TWidgetApp = { name: string; dimension: TDimension }
 type TFolderApp = { name: string; apps: TApp[] }
 
@@ -54,4 +55,8 @@ export const HomePane = () => {}
 export const AppPane = () => {}
 export const AppListPane = () => {}
 
-export const ContentPane = () => <div className={styles.contentPane} />
+export const ContentPane = () => (
+  <div className={styles.contentPane}>
+
+  </div>
+)

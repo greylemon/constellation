@@ -1,5 +1,5 @@
 describe('navigation', () => {
-  it("placeholder", () => {
+  it('placeholder', () => {
     expect(true).toBe(true)
   })
 })

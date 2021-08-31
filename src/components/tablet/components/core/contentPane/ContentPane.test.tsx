@@ -1,5 +1,5 @@
 describe('content-pane', () => {
-  it("placeholder", () => {
+  it('placeholder', () => {
     expect(true).toBe(true)
   })
 })

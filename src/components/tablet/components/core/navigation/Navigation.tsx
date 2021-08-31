@@ -23,9 +23,11 @@ type TRouterButtonTypes = {
   className: string
 }
 
-const RouterButton: FunctionComponent<TRouterButtonTypes> = (
-  { route, callback, className }
-) => {
+const RouterButton: FunctionComponent<TRouterButtonTypes> = ({
+  route,
+  callback,
+  className,
+}) => {
   const history = useHistory()
   const handleClick = useCallback(() => {
     if (callback) return callback
@@ -40,25 +42,22 @@ const RouterButton: FunctionComponent<TRouterButtonTypes> = (
 }
 
 const OpenedAppListNavigation = () => (
-  <RouterButton 
-    className={styles.navigation_icon__background} 
+  <RouterButton
+    className={styles.navigation_icon__background}
     route={ROUTE_OPENED_APPS}
   />
 )
 
 const HomeNavigationButton = () => (
-  <RouterButton 
-    className={styles.navigation_icon__home} 
-    route={ROUTE_ROOT}
-  />
+  <RouterButton className={styles.navigation_icon__home} route={ROUTE_ROOT} />
 )
 
 const ReturnNavigationButton = () => {
   const history = useHistory()
   const handleClick = useCallback(() => history.goBack(), [history])
   return (
-    <RouterButton 
-      className={styles.navigation_icon__return} 
+    <RouterButton
+      className={styles.navigation_icon__return}
       callback={handleClick}
     />
   )

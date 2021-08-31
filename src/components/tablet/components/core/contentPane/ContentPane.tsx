@@ -31,7 +31,7 @@ type TPosition = { x: number; y: number }
 type TDimension = TPosition
 
 // App types
-type TApp = { name: string; route: string, icon: JSX.Element }
+type TApp = { name: string; route: string; icon: JSX.Element }
 type TWidgetApp = { name: string; dimension: TDimension }
 type TFolderApp = { name: string; apps: TApp[] }
 
@@ -55,8 +55,4 @@ export const HomePane = () => {}
 export const AppPane = () => {}
 export const AppListPane = () => {}
 
-export const ContentPane = () => (
-  <div className={styles.contentPane}>
-
-  </div>
-)
+export const ContentPane = () => <div className={styles.contentPane}></div>
